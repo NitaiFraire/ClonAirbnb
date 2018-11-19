@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MiViaje.com</title>
+    <title>Viajes</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
+<body>
+    <div class="hero">
+        <header class="header contenedor">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <nav class="navegacion">
+                <a href="#">Vender</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Registro</a>
+                <a href="#">Iniciar Sesión</a>
+            </nav>
+        </header>
+        <div class="contenido-hero contenedor">
+            <h1>Encuentra hospedaje para tus próximas vacaciones</h1>
+            <form action="#">
+                <input type="text" name="busqueda" class="busqueda" placeholder="New York, Londres, México">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <main class="contenido contenedor">
+        <section class="modulo">
+            <h2>Que hacer</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <img src="img/hacer1.png" alt="">
+                    <div class="info">
+                        <p class="categoria concierto">Concierto</p>
+                        <p class="titulo">Beyond wonderland</p>
+                        <p class="precio">$1,200 por persona</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/hacer2.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria concierto">Concierto</p>
+                        <p class="titulo">EDC Las Vegas</p>
+                        <p class="precio">$5,500 por persona</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/hacer3.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria clase">Clase de cocina</p>
+                        <p class="titulo">Comida Vegana</p>
+                        <p class="precio">$200 por persona</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/hacer4.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria paseo">Paseo en bici</p>
+                        <p class="titulo">Paseo en cañon de San Lorenzo</p>
+                        <p class="precio">$100 por persona</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hacer">
+            <h2>Presentamos mi viaje plus</h2>
+            <div class="contenedor-cards premium">
+                <div class="info">
+                    <h3>Nueva sección de alojamientos de lujo</h3>
+                    <a href="#" class="boton">Explorar alojamientos</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
