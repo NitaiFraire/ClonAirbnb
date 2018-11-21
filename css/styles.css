@@ -51,6 +51,25 @@ h3 {
     color: white;
 }
 
+.btn-flotante {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: white;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    color: var(--oscuro);
+    -webkit-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.52);
+    transition: all .3s ease-in-out;
+}
+
+.btn-flotante.activo {
+    background-color: var(--primario);
+    color: var(--claro);
+}
+
 
 /* Colores */
 
@@ -234,3 +253,108 @@ form input[type="submit"]:hover {
 
 
 /* /Premium*/
+
+
+/* Destinos populares */
+
+.destinos .contenedor-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.destinos .card {
+    position: relative;
+}
+
+.destinos .info {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.destinos .info .titulo {
+    font-size: 1.8rem;
+    color: var(--claro);
+}
+
+
+/* /Destinos populares */
+
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    bottom: -100%;
+    background-color: var(--claro);
+    width: 100%;
+    -webkit-box-shadow: 0px -11px 14px -10px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 0px -11px 14px -10px rgba(0, 0, 0, 0.59);
+    box-shadow: 0px -11px 14px -10px rgba(0, 0, 0, 0.59);
+    transition: all .3s ease-in;
+    padding: 4rem 0;
+}
+
+.footer.activo {
+    bottom: 0;
+}
+
+.nav-footer {
+    padding: 1rem;
+}
+
+.nav-footer h3 {
+    font-size: 1.2rem;
+}
+
+.nav-footer a {
+    display: block;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: var(--oscuro);
+}
+
+.sociales ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: flex-start;
+    flex: 1 0 auto;
+    list-style: none;
+}
+
+.sociales ul li {
+    margin-right: 1rem;
+}
+
+.sociales ul li:last-of-type {
+    margin-right: 0;
+}
+
+.sociales ul li a {
+    text-decoration: none;
+}
+
+.sociales ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+    color: var(--oscuro);
+    font-size: 1.8rem;
+}
+
+.sociales ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+
+.sociales ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+
+.sociales ul li span {
+    display: none;
+}
+
+
+/* /Footer */
